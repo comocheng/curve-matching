@@ -40,9 +40,9 @@ test = ["pytest", "pytest-cov"]
 lint = ["ruff"]
 
 [project.urls]
-Homepage = "https://github.com/<your-org-or-user>/curve-matching"
-Repository = "https://github.com/<your-org-or-user>/curve-matching"
-Issues = "https://github.com/<your-org-or-user>/curve-matching/issues"
+Homepage = "https://github.com/comocheng/curve-matching"
+Repository = "https://github.com/comocheng/curve-matching"
+Issues = "https://github.com/comocheng/curve-matching/issues"
 
 [tool.hatch.version]
 path = "src/curve_matching/_version.py"

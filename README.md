@@ -18,14 +18,31 @@ parameter you pass in, not something baked into the code.
 
 ## Installation
 
+Directly from GitHub:
+
+```bash
+pip install git+https://github.com/comocheng/curve-matching.git
+```
+
+Or clone and install locally:
+
+```bash
+git clone https://github.com/comocheng/curve-matching.git
+cd curve-matching
+pip install .
+```
+
+Once published to PyPI:
+
 ```bash
 pip install curve-matching
 ```
 
-Plotting helpers are an optional extra (they pull in matplotlib):
+Plotting helpers are an optional extra (they pull in matplotlib) -- append
+`[plot]` to any of the install commands above, e.g.:
 
 ```bash
-pip install curve-matching[plot]
+pip install "curve-matching[plot] @ git+https://github.com/comocheng/curve-matching.git"
 ```
 
 ## Quickstart
