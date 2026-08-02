@@ -1,10 +1,11 @@
 """Dissimilarity metrics and shift alignment between two fitted curves.
 
 The four metrics implemented here (``d_L2_0``, ``d_L2_1``, ``d_P_0``,
-``d_P_1``) follow the curve-matching framework of Bernardi et al., "A
-methodology for the systematic quantification of curve-matching methods"
+``d_P_1``) follow the curve-matching framework of Bernardi et al. (2016),
+"Curve matching, a generalized framework for models/experiments comparison"
 (equations 4-18), generalized from its original laminar-flame-speed
-application to any pair of reference/candidate functional curves.
+application to any pair of reference/candidate functional curves. See the
+README for the full citation.
 """
 
 import numpy as np

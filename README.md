@@ -4,9 +4,8 @@ Fit noisy, scattered data with a penalized regression spline, then measure
 how much a reference curve and one or more candidate curves disagree, and
 find the shift that best aligns them.
 
-This package implements the curve-matching framework of Bernardi et al.,
-*"A methodology for the systematic quantification of curve-matching methods"*
-(equations 4-18): a quintic penalized spline with automatic smoothing
+This package implements the curve-matching framework of Bernardi et al.
+(2016) [1] (equations 4-18): a quintic penalized spline with automatic smoothing
 selection (GCV), four dissimilarity metrics (amplitude and derivative
 versions of an L2 distance and a Pearson/cosine distance), an optimal-shift
 search, and a robust, uncertainty-weighted aggregate score across many
@@ -74,8 +73,7 @@ comparison = compare_curve_set(
 ### Compare every pair in a long-form table
 
 For tabular results where every row is one observation, all schema-dependent
-column names are explicit arguments -- nothing about "experiment", "model",
-or any other domain vocabulary is hardcoded:
+column names are explicit arguments.
 
 ```python
 from curve_matching import compare_tabular_data
@@ -183,6 +181,23 @@ Released under the MIT license; see [LICENSE](LICENSE).
 ## Citation
 
 The dissimilarity metrics, spline-fitting workflow, and equations 4-18
-implemented here come from Bernardi et al., *"A methodology for the
-systematic quantification of curve-matching methods."* Fill in the full
-bibliographic details (authors, journal, year, DOI) here before publishing.
+implemented here come from:
+
+[1] M.S. Bernardi, M. Pelucchi, A. Stagni, L.M. Sangalli, A. Cuoci,
+A. Frassoldati, P. Secchi, T. Faravelli, "Curve matching, a generalized
+framework for models/experiments comparison: An application to n-heptane
+combustion kinetic mechanisms," *Combustion and Flame*, vol. 168, pp.
+186-203, 2016. https://doi.org/10.1016/j.combustflame.2016.03.019
+
+```bibtex
+@article{BERNARDI2016186,
+  title = {Curve matching, a generalized framework for models/experiments comparison: An application to n-heptane combustion kinetic mechanisms},
+  journal = {Combustion and Flame},
+  volume = {168},
+  pages = {186-203},
+  year = {2016},
+  issn = {0010-2180},
+  doi = {https://doi.org/10.1016/j.combustflame.2016.03.019},
+  author = {M.S. Bernardi and M. Pelucchi and A. Stagni and L.M. Sangalli and A. Cuoci and A. Frassoldati and P. Secchi and T. Faravelli},
+}
+```
